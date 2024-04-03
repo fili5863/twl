@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --ColorHeader: darkgreen;
+  --ColorFooter: gray;
+  --ColorBg: whitesmoke;
+  --ColorSecondary: aquamarine;
+  --ColorAccent: red;
+}
+
+.mainHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainHeader div {
+  background-color: darkgreen;
+  padding: 1rem;
+}
+
+.mainHeader img {
+  display: none;
+}
+
+.mainHeader div div {
+  text-align: center;
+}
+
+.mainHeader nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--ColorSecondary);
+}
+
+.mainHeader nav ul li {
+  border-bottom: 1px solid var(--ColorAccent);
+  padding: 0.25rem;
+}
+
+.mainHeader a {
+  text-decoration: none;
+}
+
+.releaseHeader {
+  padding: 1rem;
+  background-color: var(--ColorAccent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.releaseHeader div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.releaseHeader div h2 {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--ColorSecondary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+}
+
+.releaseHeader img {
+  border: 0.5rem solid var(--ColorBg);
+  border-radius: 0.5rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section article {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+article blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  font-style: italic;
+  padding: 1rem;
+  background-color: var(--ColorSecondary);
+  border-radius: 0.5rem;
+}
+
+article blockquote p:nth-of-type(2) {
+  text-align: end;
+}
+
+.tourSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section header {
+  background-color: var(--ColorSecondary);
+  padding: 1rem;
+}
+
+.tourSection img {
+  padding: 1rem;
+}
+
+#presentation-list {
+  padding: 1rem;
+  list-style: none;
+}
+
+.presentation-item:not(:last-of-type) {
+  border-bottom: 1px solid var(--ColorAccent);
+}
+
+.presentation-item {
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dateMic {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#bookList {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bookObject {
+  padding-inline: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#bookObject p {
+  padding-block-start: 1rem;
+}
+
+#bookObject:not(:last-of-type) {
+  border-bottom: 1px solid var(--ColorAccent);
+}

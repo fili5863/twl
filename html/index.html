@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Tristan Wede Lind</title>
+    <link
+      rel="stylesheet"
+      href="../css/styles.css"
+    />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body>
+    <header class='mainHeader'>
+      <div>
+        <img
+          src="../img/lind.png"
+          alt="Tristan Wede Lind"
+        />
+        <div>
+          <h1>Tristan Wede Lind</h1>
+          <h2>Web Developer and Author</h2>
+        </div>
+        <select
+          name=""
+          id=""
+        >
+          <option value="eng">EN</option>
+          <option value="dk">DA</option>
+        </select>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">On tour</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <header class='releaseHeader'>
+          <div>
+            <h2>New release</h2>
+            <h3>Advanced PHP: From Zero to Hero</h3>
+            <h4>&#169 2023 KEA Publishing</h4>
+          </div>
+            <img
+                src="../img/book_php_preview.png"
+                alt="Picture of book"
+              />
+        </header>
+        <article>
+          <p>
+            A Copenhagen native, Tristan Wede Lind has established himself as a leading authority in web development, captivating audiences worldwide with his profound knowledge of various technologies and methodologies. With a career spanning over two decades, Lind has honed his skills working for industry giants, where he contributed to cutting-edge projects that pushed the boundaries of web development.
+            <br>
+            <br>
+            Lind's latest achievements showcase his commitment to advancing the field. Through meticulous research and hands-on experience, he has developed novel approaches to web design, user experience optimization, and responsive development, ensuring that websites and applications deliver immersive and intuitive experiences across devices. 
+            <br>
+            <br>
+            As an accomplished author, Lind has authored numerous critically acclaimed books that serve as essential guides for aspiring web developers and industry professionals alike. His publications, revered for their clarity, depth, and practicality, have garnered widespread acclaim and have been translated into multiple languages, solidifying his reputation as an influential figure in the global web development community.
+        </p>
+          <blockquote>
+            <p>
+                Tristan Wede Lind's books on web development are an invaluable resource for both novices and seasoned professionals. His comprehensive yet accessible approach demystifies complex concepts, providing practical guidance that translates directly into real-world success. Lind's expertise shines through in every page, making his works an indispensable addition to any developer's library.
+            </p>
+            <p>The Tech Tribune</p>
+          </blockquote>
+          <p>
+            In addition to his professional accomplishments, Lind is known for his dedication to sharing his expertise through conferences, workshops, and online platforms. As a sought-after speaker, he has enlightened audiences with his insightful talks, empowering developers to embrace emerging technologies and adapt to the ever-evolving digital landscape.
+        </p>
+        </article>
+      </section>
+      <section class='tourSection'>
+        <header>
+          <h2>On tour</h2>
+        </header>
+        <img
+          src="../img/tristan_640.jpg"
+          alt="Picture of Tristan at one of his tours"
+        />
+        <ul id="presentation-list">
+          <template id="presentation-template">
+            <li class="presentation-item">
+              <div class='dateMic'>
+                🎤
+                <p class="date"></p>
+              </div>
+              <h3 class="presentation-title"></h3>
+              <p class="location"></p>
+            </li>
+          </template>
+        </ul>
+      </section>
+      <section>
+        <header>
+            <h3>Books</h3>
+        </header>
+        <div id="bookList">
+          <template id='bookTemplate'>
+            <article id='bookObject'>
+              <img
+                src=""
+                alt=""
+              />
+              <div>
+                <h3 class='title'></h3>
+                <h4 class='bookSubtitle'></h4>
+                <p class='bookDescription'></p>
+              </div>
+            </article>
+          </template>
+        </div>
+      </section>
+      <section id="contact">
+        <header><h2>Contact</h2></header>
+
+        <div class="contact-with-image">
+          <div class=" ">
+            <ul id="employee-list"></ul>
+            <template id="employee-template">
+              <li class="employee">
+                <img
+                  class="profile"
+                  src=""
+                  alt=""
+                />
+                <div>
+                  <h3 class="department"></h3>
+                  <p class="role"></p>
+                  <a
+                    href=""
+                    class="email"
+                  ></a>
+                  <p class="phone">
+                    Phone:
+                    <a
+                      class="phone-number"
+                      href=""
+                    ></a>
+                  </p>
+                </div>
+              </li>
+            </template>
+
+            <form>
+              <fieldset>
+                <legend>Request booking</legend>
+                <div>
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">E-mail address </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+
+                <div>
+                  <label for="enquri">Enquri</label>
+                  <textarea
+                    name="enquri"
+                    id="enquri"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+
+                <input
+                  type="submit"
+                  value="Submit"
+                />
+              </fieldset>
+            </form>
+          </div>
+
+          <img
+            class="contact-confrence"
+            src="/img/conference.jpg"
+            alt="conference"
+          />
+        </div>
+      </section>
+
+      <a
+        class="link-up"
+        href="#top"
+        >👆</a
+      >
+    
+
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="publish_and_some">
+          <div class="kea-publish">
+            <img
+              src="/img/keapublishing.png"
+              alt="kea publishing logo"
+            />
+            <p>KEA Publishing, Inc.</p>
+          </div>
+          <ul id="some">
+            <li>
+              <a
+                href="#"
+                aria-label="Go to"
+                ><img
+                  src="/img/twitter.png"
+                  alt="twitter logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                aria-label="Go to"
+                ><img
+                  src="/img/linkedin.png"
+                  alt="linkedin logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                aria-label="Go to"
+                ><img
+                  src="/img/facebook.png"
+                  alt="facebook logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <ul>
+          <li>
+            <a href="#">
+              <p>Privacy Policy</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Terms of Service</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p>Cookie Policy</p>
+            </a>
+          </li>
+        </ul>
+
+        <div id="credits">
+          <p><a href="https://www.pexels.com/@bertellifotografia/">Person pictures by Matheus Bertelli</a>Matheus Bertelli</p>
+
+          <p><a href="https://www.123rf.com/">Book cover pictures by</a>123RF</p>
+          <p>
+            <a
+              href="https://www.powr.io/plugins/social-media-icons/standalone
+            "
+              >SoMe icons generated with</a
+            >Powr.io
+          </p>
+          <p>
+            <a
+              href="https://www.freepik.com/
+            "
+              >Microphone icon by</a
+            >Freepik
+          </p>
+          <p>
+            <a
+              href="https://www.flaticon.com/authors/yogi-aprelliyanto
+            "
+              >Up arrow icon by</a
+            >Yogi Aprelliyanto
+          </p>
+          <p>
+            <a
+              href="https://chat.openai.com/?model=text-davinci-002-render-sha
+            "
+              >Texts generated by</a
+            >ChatGPT
+          </p>
+        </div>
+      </div>
+
+      <small>&#169; 2023 KEA Development</small>
+    </footer>
+  </body>
+</html>
