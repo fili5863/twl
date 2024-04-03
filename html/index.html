@@ -34,10 +34,10 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">On tour</a></li>
-          <li><a href="#">Books</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#tour">On tour</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -46,22 +46,25 @@
         <header class='releaseHeader'>
           <div>
             <h2>New release</h2>
-            <h3>Advanced PHP: From Zero to Hero</h3>
-            <h4>&#169 2023 KEA Publishing</h4>
+            <div>
+              <h3>Advanced PHP: From Zero to Hero</h3>
+              <small>&#169 2023 KEA Publishing</small>
+            </div>
           </div>
             <img
                 src="../img/book_php_preview.png"
                 alt="Picture of book"
               />
         </header>
+        <div class='articleAside'>
         <article>
           <p>
             A Copenhagen native, Tristan Wede Lind has established himself as a leading authority in web development, captivating audiences worldwide with his profound knowledge of various technologies and methodologies. With a career spanning over two decades, Lind has honed his skills working for industry giants, where he contributed to cutting-edge projects that pushed the boundaries of web development.
-            <br>
-            <br>
+          </p>
+          <p>
             Lind's latest achievements showcase his commitment to advancing the field. Through meticulous research and hands-on experience, he has developed novel approaches to web design, user experience optimization, and responsive development, ensuring that websites and applications deliver immersive and intuitive experiences across devices. 
-            <br>
-            <br>
+           </p>
+          <p>
             As an accomplished author, Lind has authored numerous critically acclaimed books that serve as essential guides for aspiring web developers and industry professionals alike. His publications, revered for their clarity, depth, and practicality, have garnered widespread acclaim and have been translated into multiple languages, solidifying his reputation as an influential figure in the global web development community.
         </p>
           <blockquote>
@@ -74,8 +77,35 @@
             In addition to his professional accomplishments, Lind is known for his dedication to sharing his expertise through conferences, workshops, and online platforms. As a sought-after speaker, he has enlightened audiences with his insightful talks, empowering developers to embrace emerging technologies and adapt to the ever-evolving digital landscape.
         </p>
         </article>
+        <aside>
+          <ul>
+            <li class='cssBook'>  <img src="/img/book_css.png" alt="CSS for Developers">
+              <h4>CSS for Developers</h4>
+              <small>A Visual Journey</small>
+              <p>2022</p>
+            </li>
+            <li>  <img src="/img/book_html.png" alt="Semantic HTML">
+              <h4>Semantic HTML</h4>
+              <small>Foundation of the Web</small>
+              <p>2019</p>
+            </li>
+            <li>  <img src="/img/book_js.png" alt="CSS for Developers">
+              <h4>Advanced JavaScript</h4>
+              <small>Frameworkless</small>
+              <p>2021</p>
+            </li>
+            <li>
+              <img src="/img/book_programming.png" alt="Basic Programming">
+              <h4>Basic Programming</h4>
+              <small>Algorithms and Beyond</small>
+              <p>2017</p>
+            </li>
+          </ul>
+        
+        </aside>
+      </div>
       </section>
-      <section class='tourSection'>
+      <section id='tour' class='tourSection'>
         <header>
           <h2>On tour</h2>
         </header>
@@ -83,22 +113,30 @@
           src="../img/tristan_640.jpg"
           alt="Picture of Tristan at one of his tours"
         />
-        <ul id="presentation-list">
-          <template id="presentation-template">
-            <li class="presentation-item">
+        <ul id="presentationList">
+          <template id="presentationTemplate">
+            <li class="presentationItem">
               <div class='dateMic'>
                 🎤
                 <p class="date"></p>
               </div>
-              <h3 class="presentation-title"></h3>
+              <h3 class="presentationTitle"></h3>
               <p class="location"></p>
             </li>
           </template>
         </ul>
+        <a
+        class="linkUp"
+        href="#top"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#19463c" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+  <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+</svg></a
+      >
       </section>
-      <section>
+      <section id='books'>
         <header>
-            <h3>Books</h3>
+            <h2>Books</h2>
         </header>
         <div id="bookList">
           <template id='bookTemplate'>
@@ -115,14 +153,22 @@
             </article>
           </template>
         </div>
+        <a
+        class="linkUp"
+        href="#top"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#19463c" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+  <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+</svg></a
+      >
       </section>
       <section id="contact">
         <header><h2>Contact</h2></header>
 
-        <div class="contact-with-image">
+        <div class="contactWithImage">
           <div class="contactForm">
-            <ul id="employee-list">
-            <template id="employee-template">
+            <ul id="employeeList">
+            <template id="employeeTemplate">
               <li class="employee">
                 <img
                   class="profile"
@@ -141,7 +187,7 @@
                 <p class="phone">
                   Phone:
                   <a
-                  class="phone-number"
+                  class="phoneNumber"
                   href=""
                   ></a>
                 </p>
@@ -190,7 +236,7 @@
           </div>
 
           <img
-            class="contact-conference"
+            class="contactConference"
             src="/img/conference.jpg"
             alt="conference"
           />
@@ -198,17 +244,20 @@
       </section>
 
       <a
-        class="link-up"
+        class="linkUp"
         href="#top"
-        >👆</a
+        ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#19463c" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+  <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+</svg></a
       >
     
 
     </main>
     <footer>
-      <div class="footer-content">
-        <div class="publish_and_some">
-          <div class="kea-publish">
+      <div class="footerContent">
+        <div class="publishSome">
+          <div class="keaPublish">
             <img
               src="/img/keapublishing.png"
               alt="kea publishing logo"
@@ -265,35 +314,35 @@
         </ul>
 
         <div id="credits">
-          <p><a href="https://www.pexels.com/@bertellifotografia/">Person pictures by Matheus Bertelli</a>Matheus Bertelli</p>
+          <p><a href="https://www.pexels.com/@bertellifotografia/">Person pictures by </a>Matheus Bertelli</p>
 
-          <p><a href="https://www.123rf.com/">Book cover pictures by</a>123RF</p>
+          <p><a href="https://www.123rf.com/">Book cover pictures by </a>123RF</p>
           <p>
             <a
               href="https://www.powr.io/plugins/social-media-icons/standalone
             "
-              >SoMe icons generated with</a
+              >SoMe icons generated with </a
             >Powr.io
           </p>
           <p>
             <a
               href="https://www.freepik.com/
             "
-              >Microphone icon by</a
+              >Microphone icon by </a
             >Freepik
           </p>
           <p>
             <a
               href="https://www.flaticon.com/authors/yogi-aprelliyanto
             "
-              >Up arrow icon by</a
+              >Up arrow icon by </a
             >Yogi Aprelliyanto
           </p>
           <p>
             <a
               href="https://chat.openai.com/?model=text-davinci-002-render-sha
             "
-              >Texts generated by</a
+              >Texts generated by </a
             >ChatGPT
           </p>
         </div>

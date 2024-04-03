@@ -1,12 +1,12 @@
 'use strict';
 
-const presentationList = document.querySelector('#presentation-list');
-const presentationTemplate = document.querySelector('#presentation-template').content;
+const presentationList = document.querySelector('#presentationList');
+const presentationTemplate = document.querySelector('#presentationTemplate').content;
 const bookList = document.querySelector('#bookList');
 const bookTemplate = document.querySelector('#bookTemplate').content;
 
-const employeeList = document.querySelector('#employee-list');
-const employeeTemplate = document.querySelector('#employee-template').content;
+const employeeList = document.querySelector('#employeeList');
+const employeeTemplate = document.querySelector('#employeeTemplate').content;
 
 const events = [
   {
@@ -143,7 +143,7 @@ function addEvents(events) {
   events.forEach(event => {
     const clone = presentationTemplate.cloneNode(true);
     clone.querySelector('.date').textContent = event.date;
-    clone.querySelector('.presentation-title').textContent = event.title;
+    clone.querySelector('.presentationTitle').textContent = event.title;
     clone.querySelector('.location').textContent = event.location;
     presentationList.appendChild(clone);
   });
@@ -171,7 +171,7 @@ function addEmployees(employees) {
     const email = clone.querySelector('.email');
     email.textContent = employee.mail;
     email.href = `mailto:${employee.mail}`;
-    const phone = clone.querySelector('.phone-number');
+    const phone = clone.querySelector('.phoneNumber');
     phone.textContent = employee.phone;
     phone.href = `tel:${employee.phone}`;
     employeeList.appendChild(clone);
