@@ -120,8 +120,8 @@
         <header><h2>Contact</h2></header>
 
         <div class="contact-with-image">
-          <div class=" ">
-            <ul id="employee-list"></ul>
+          <div class="contactForm">
+            <ul id="employee-list">
             <template id="employee-template">
               <li class="employee">
                 <img
@@ -130,23 +130,26 @@
                   alt=""
                 />
                 <div>
-                  <h3 class="department"></h3>
-                  <p class="role"></p>
-                  <a
-                    href=""
-                    class="email"
-                  ></a>
-                  <p class="phone">
-                    Phone:
-                    <a
-                      class="phone-number"
-                      href=""
-                    ></a>
-                  </p>
-                </div>
-              </li>
-            </template>
 
+                <h3 class="department"></h3>
+              <div class='contactInfo'>
+                <p class="role"></p>
+                <a
+                href=""
+                class="email"
+                ></a>
+                <p class="phone">
+                  Phone:
+                  <a
+                  class="phone-number"
+                  href=""
+                  ></a>
+                </p>
+              </div>
+              </div>
+            </li>
+          </template>
+          </ul>
             <form>
               <fieldset>
                 <legend>Request booking</legend>
@@ -187,7 +190,7 @@
           </div>
 
           <img
-            class="contact-confrence"
+            class="contact-conference"
             src="/img/conference.jpg"
             alt="conference"
           />

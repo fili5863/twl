@@ -124,14 +124,16 @@ const employees = [
   {
     imageSrc: '/img/victoria.png',
     department: 'Publishing',
+    name: 'Victoria Marsh',
     role: 'Editor',
     mail: 'victoriamarsh@keapublishing.com',
     phone: '(+44) 079 7502 0028',
   },
   {
     imageSrc: '/img/elly.png',
-    department: 'Agent',
-    role: 'Elly Houthuijzen',
+    department: 'Booking',
+    name: 'Elly Houthuijzen',
+    role: 'Agent',
     mail: 'elly@houthuijzen.com',
     phone: '(+31) 06-42821232',
   },
@@ -165,7 +167,7 @@ function addEmployees(employees) {
     const img = clone.querySelector('img');
     img.src = employee.imageSrc;
     clone.querySelector('.department').textContent = employee.department;
-    clone.querySelector('.role').textContent = employee.role;
+    clone.querySelector('.role').textContent = employee.name + ' (' + employee.role + ')';
     const email = clone.querySelector('.email');
     email.textContent = employee.mail;
     email.href = `mailto:${employee.mail}`;
