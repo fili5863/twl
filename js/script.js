@@ -83,37 +83,37 @@ const events = [
 
 const books = [
   {
-    imageSrc: '/img/book_php.png', // You can fill in the image source URLs as needed
+    imageSrc: '../img/book_php.png', // You can fill in the image source URLs as needed
     title: 'Advanced PHP',
     subTitle: 'From Zero to Hero',
     description: `"Advanced PHP: From Zero to Hero" is a groundbreaking book that unlocks the full potential of PHP programming. With meticulous detail, Lind guides readers through advanced concepts, empowering them to master complex topics such as object-oriented programming, database integration, and secure web application development. This comprehensive guide is a must-have for aspiring PHP developers seeking to elevate their skills to heroic heights.`,
   },
   {
-    imageSrc: '/img/book_css.png',
+    imageSrc: '../img/book_css.png',
     title: 'CSS for Developers',
     subTitle: 'A Visual Journey',
     description: `This work offers an immersive exploration of CSS that transcends mere syntax. Through vivid illustrations and practical examples, Lind demystifies the intricacies of CSS, equipping developers with the tools to craft stunning, responsive designs. This visual masterpiece is an indispensable companion for developers seeking to elevate their CSS skills and create visually captivating websites.`,
   },
   {
-    imageSrc: '/img/book_js.png',
+    imageSrc: '../img/book_js.png',
     title: 'Advanced JavaScript',
     subTitle: 'Frameworkless',
     description: `In "Advanced JavaScript: Frameworkless," Tristan Wede Lind revolutionizes the approach to JavaScript development. Breaking free from the confines of frameworks, Lind delves into the core principles and advanced techniques that empower developers to create robust, scalable, and framework-independent JavaScript applications. This essential guide unveils the true potential of JavaScript, transforming developers into true masters of the language.`,
   },
   {
-    imageSrc: '/img/book_programming.png',
+    imageSrc: '../img/book_programming.png',
     title: 'Basic Programming',
     subTitle: 'Algorithms and Beyond',
     description: `A definitive guide that demystifies the fundamentals of programming. With clarity and precision, Lind introduces readers to essential concepts such as variables, loops, and conditionals, while also delving into the world of algorithms. This comprehensive resource equips aspiring programmers with the foundational knowledge needed to embark on a successful coding journey.`,
   },
   {
-    imageSrc: '/img/book_js_basic.png',
+    imageSrc: '../img/book_js_basic.png',
     title: 'Basic JavaScript',
     subTitle: 'Tweaking the Web',
     description: `"Basic JavaScript" is a transformative book that demystifies the building blocks of JavaScript. With practical examples and step-by-step instructions, Lind empowers readers to enhance websites with interactive elements and dynamic functionalities. This essential guide unlocks the power of JavaScript, enabling readers to tweak the web and create engaging user experiences.`,
   },
   {
-    imageSrc: '/img/book_front_end.png',
+    imageSrc: '../img/book_front_end.png',
     title: 'Front-End Web Development',
     subTitle: 'A Nice Introduction',
     description: `Tristan Wede Lind crafts a captivating journey into the world of front-end development. Lind artfully introduces readers to HTML, CSS, and JavaScript, unraveling the secrets of creating visually stunning and interactive websites. With its approachable style and comprehensive coverage, this book is the perfect starting point for aspiring front-end developers.`,
@@ -122,7 +122,7 @@ const books = [
 
 const employees = [
   {
-    imageSrc: '/img/victoria.png',
+    imageSrc: '..../img/victoria.png',
     department: 'Publishing',
     name: 'Victoria Marsh',
     role: 'Editor',
@@ -130,7 +130,7 @@ const employees = [
     phone: '(+44) 079 7502 0028',
   },
   {
-    imageSrc: '/img/elly.png',
+    imageSrc: '..../img/elly.png',
     department: 'Booking',
     name: 'Elly Houthuijzen',
     role: 'Agent',
